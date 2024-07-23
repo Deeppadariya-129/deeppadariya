@@ -1,0 +1,236 @@
+/* @import url(style.css); */
+:root {
+    --heading-text: "Fira Code";
+    --body-text: "Encode Sans Semi Expanded";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #080808;
+    overflow-x: hidden;
+}
+
+#maincontect {
+    height: 100%;
+    width: 100%;
+}
+
+.header i {
+    color: white;
+    display: none;
+}
+
+#maincontect .up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.8vw;
+}
+
+#maincontect .up h1 {
+    color: white;
+    font-family: "Fira Code", sans-serif;
+    font-size: 2vw;
+}
+
+#maincontect .up p {
+    color: white;
+    font-size: .9vw;
+    font-family: var(--body-text);
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+    gap: 10px;
+}
+
+.down .nameemail input {
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: var(--body-text);
+    font-size: 1vw;
+    color: white;
+    padding: 1vw 1.5vw;
+    width: 28.5vw;
+    border-radius: 10px;
+    margin: 0.5vw;
+}
+
+.down .subject input {
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: var(--body-text);
+    font-size: 1vw;
+    color: white;
+    padding: 1vw 1.5vw;
+    width: 58.3vw;
+    border-radius: 10px;
+    margin: 0.5vw;
+}
+
+.down .textareabtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5vw;
+}
+
+.down .textareabtn textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1vw;
+    font-family: var(--body-text);
+    color: white;
+    padding: 1vw 1.5vw;
+    width: 58.3vw;
+    border-radius: 10px;
+}
+
+.textareabtn button {
+    padding: 0.8vw 5vw;
+    color: white;
+    font-size: 1vw;
+    font-family: var(--heading-text);
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 0.5;
+}
+
+.textareabtn button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+}
+footer{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header i {
+        color: white;
+        display: block;
+        font-size: 6vw;
+    }
+
+    #maincontect .up {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #maincontect .up h1 {
+        color: white;
+        font-family: "Fira Code", sans-serif;
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+
+    #maincontect .up p {
+        color: white;
+        width: 90%;
+        text-align: center;
+        font-size: 3.5vw;
+        font-family: var(--body-text);
+    }
+
+    .down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7vw;
+    }
+
+    .down .nameemail {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .down .nameemail input {
+        background-color: transparent;
+        border: 1.5px solid white;
+        font-family: var(--body-text);
+        font-size: 3.5vw;
+        color: white;
+        padding: 2vw 1.5vw;
+        width: 80vw;
+        height: 10vw;
+        border-radius: 3px;
+    }
+
+    .down .subject input {
+        background-color: transparent;
+        border: 1.5px solid white;
+        font-family: var(--body-text);
+        font-size: 3.5vw;
+        color: white;
+        padding: 2vw 1.5vw;
+        width: 80vw;
+        height: 10vw;
+        border-radius: 3px;
+        margin-top: 3vw;
+    }
+
+    .down .textareabtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 3vw;
+    }
+
+    .down .textareabtn textarea {
+        background-color: transparent;
+        border: 2px solid white;
+        font-size: 3.5vw;
+        font-family: var(--body-text);
+        color: white;
+        padding: 1vw 1.5vw;
+        width: 80vw;
+        border-radius: 3px;
+    }
+
+    .textareabtn button {
+        padding: 2vw 10vw;
+        color: white;
+        font-size: 3vw;
+        font-family: var(--heading-text);
+        font-weight: 700;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .textareabtn button:hover {
+        color: black;
+        background-color: white;
+    }
+
+}
